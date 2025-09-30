@@ -68,6 +68,7 @@ body {
 }
 .fa-arrow-down {
   margin-top: 300px;
-  -webkit-transform: scaleY(3);
-          transform: scaleY(3);
+  font-size: 28px;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
 }
