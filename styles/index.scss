@@ -1,7 +1,8 @@
 @import "header";
 
 body{
-    margin:50px;
+    
+    margin: 50px;
     padding: 0;
     width: 90%;
     max-width: 1440px;
@@ -21,7 +22,7 @@ body{
 .main{
 
     display: flex;
-    align-items:center ;
+    align-content:center ;
     gap: 50px;
 }
 
@@ -48,6 +49,11 @@ body{
     .heading{
         font-size: 30px;
     }  
+}
+
+.fa-arrow-down{
+    margin-top: 300px;
+    transform: scaleY(3);
 }
 
 
