@@ -2,61 +2,86 @@
 
 body{
     
-    margin: 40px 130px;
-    min-height: 100vh;
+    margin: 50px, auto;
+    padding: 30px;
     background-image: linear-gradient(to right, #DBE4FF 1.5px, transparent 1px), linear-gradient(to bottom, #DBE4FF 1.5px, transparent 1px);
     background-size: 130px 80px;
-    width: 100%;
+    width: 90%;
     max-width: 1440px;
     font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     color: #242635;
+    justify-content: space-around;
     
 }
 
-.text{
-    font-size: 22px;
+.main-text{
+    flex: 1;
+    width: 50%;
 }
 
 
-.main{
-
-    display: flex;
-    align-content:center ;
-    gap: 50px;
-    max-width: 1100px;
+.main {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  position: relative;
 }
 
-
-
-
-.heading{
-        font-size: 90px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-    } 
-
-
-@media screen and (max-width: 1000px){
-    .heading{
-        font-size: 50px;
-        
-    } 
+.heading {
+  font-size: 90px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-
-@media screen and (max-width: 800px){
-    .heading{
-        font-size: 30px;
-    }  
+.text {
+  font-size: 22px;
+  margin-top: 20px;
 }
 
-.fa-arrow-down{
-    margin-top: 270px;
-    font-size: 28px;
-    transform: scaleY(2);
+.fa-arrow-down {
+  display: block;
+  transform: scaleY(4); /* stretch */
+  position: absolute;
+  bottom: 0;            /* stick to the bottom of container */ 
 }
 
 
 
+
+.main-image img {
+  flex: 1;
+  justify-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  .heading {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column; /* stack text & image */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .nav-links {
+    display: none; /* hide links */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger */
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+}

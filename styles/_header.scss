@@ -2,7 +2,7 @@
    
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 200px;
     
 }
 
@@ -14,7 +14,25 @@
 
 .link{
     display: flex;
-    align-items: center;
     gap: 40px;
+
 }
 
+
+.nav-links {
+  text-decoration: none;
+  color: #242635;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4A4FF2;   /* hover effect */
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}

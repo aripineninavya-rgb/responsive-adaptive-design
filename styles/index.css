@@ -5,7 +5,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 150px;
+  gap: 200px;
 }
 
 .logo {
@@ -18,58 +18,106 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 40px;
 }
 
+.nav-links {
+  text-decoration: none;
+  color: #242635;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4A4FF2; /* hover effect */
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 body {
-  margin: 40px 130px;
-  min-height: 100vh;
+  margin: 50px, auto;
+  padding: 30px;
   background-image: linear-gradient(to right, #DBE4FF 1.5px, transparent 1px), linear-gradient(to bottom, #DBE4FF 1.5px, transparent 1px);
   background-size: 130px 80px;
-  width: 100%;
+  width: 90%;
   max-width: 1440px;
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   color: #242635;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.text {
-  font-size: 22px;
+.main-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
 }
 
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 50px;
-  max-width: 1100px;
+  position: relative;
 }
 
 .heading {
   font-size: 90px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 1000px) {
+.text {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.fa-arrow-down {
+  display: block;
+  -webkit-transform: scaleY(4);
+          transform: scaleY(4); /* stretch */
+  position: absolute;
+  bottom: 0; /* stick to the bottom of container */
+}
+
+.main-image img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1100px) {
   .heading {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* stack text & image */
+    text-align: center;
+    gap: 30px;
+  }
+  .nav-links {
+    display: none; /* hide links */
+  }
+  .hamburger {
+    display: block; /* show hamburger */
+  }
   .heading {
     font-size: 30px;
   }
-}
-.fa-arrow-down {
-  margin-top: 270px;
-  font-size: 28px;
-  -webkit-transform: scaleY(2);
-          transform: scaleY(2);
 }
