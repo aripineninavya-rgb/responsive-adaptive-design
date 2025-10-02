@@ -58,7 +58,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 50%;
 }
 
 .main {
@@ -88,7 +87,7 @@ body {
   -webkit-transform: scaleY(4);
           transform: scaleY(4); /* stretch */
   position: absolute;
-  bottom: 0; /* stick to the bottom of container */
+  bottom: 30px; /* stick to the bottom of container */
 }
 
 .main-image img {
@@ -119,9 +118,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-  }
-  .nav-links {
-    display: none; /* hide links */
   }
   .link.active {
     display: -webkit-box;

@@ -17,7 +17,6 @@ body{
 
 .main-text{
     flex: 1;
-    width: 50%;
 }
 
 
@@ -43,7 +42,7 @@ body{
   display: block;
   transform: scaleY(4); /* stretch */
   position: absolute;
-  bottom: 0;            /* stick to the bottom of container */ 
+  bottom: 30px;            /* stick to the bottom of container */ 
 }
 
 
@@ -77,11 +76,6 @@ body{
     display: none; /* hidden on mobile */
     flex-direction: column;
     gap: 10px;
-  }
-
-
- .nav-links {
-    display: none; /* hide links */
   }
 
     .link.active {
