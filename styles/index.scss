@@ -2,7 +2,7 @@
 
 body{
     
-    margin: 50px, auto;
+    margin: 50px;
     padding: 30px;
     background-image: linear-gradient(to right, #DBE4FF 1.5px, transparent 1px), linear-gradient(to bottom, #DBE4FF 1.5px, transparent 1px);
     background-size: 130px 80px;
@@ -23,7 +23,7 @@ body{
 
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 50px;
   position: relative;
 }
@@ -60,7 +60,7 @@ body{
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .heading {
     font-size: 50px;
   }
@@ -73,13 +73,26 @@ body{
     gap: 30px;
   }
 
-  .nav-links {
+    .link {
+    display: none; /* hidden on mobile */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+ .nav-links {
     display: none; /* hide links */
   }
+
+    .link.active {
+    display: flex; /* shown when "active" is added */
+  }
+
 
   .hamburger {
     display: block; /* show hamburger */
   }
+
 
   .heading {
     font-size: 30px;
